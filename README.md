@@ -1,13 +1,12 @@
 # pfactory 0.1.1
-## A crappy, incomplete implementation of [factor](http://factorcode.org) as a Python DSL
+## A crappy, incomplete implementation of [Factor](http://factorcode.org) as a Python DSL
 
 This was inspired by Jon Purdy's, “[Why Concatenative Programming Matters](http://evincarofautumn.blogspot.mx/2012/02/why-concatenative-programming-matters.html)”
 
 Example code:
 
 ```python
-
-	  assert parse("3 2 -")() == 1
+    assert parse("3 2 -")() == 1
     assert parse("2 -")(3) == 1
     assert parse("3 2 *")() == 6
     assert parse("2 3 * 4 5 * +")() == 26
